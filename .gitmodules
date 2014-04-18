@@ -1,0 +1,3 @@
+[submodule "Submodules/GCDWebServer"]
+	path = Submodules/GCDWebServer
+	url = git@github.com:swisspol/GCDWebServer.git
