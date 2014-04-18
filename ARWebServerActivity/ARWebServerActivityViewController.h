@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ARWebServerActivity.h"
 
 @interface ARWebServerActivityViewController : UIViewController
+
+@property (strong, nonatomic) ARWebServerActivity *webServerActivity;
 
 @end

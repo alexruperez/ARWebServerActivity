@@ -14,36 +14,64 @@
 
 @implementation ARWebServerActivityViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)])
+    {
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
+    
+    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0f, [[UIScreen mainScreen] bounds].size.height - 100.0f, [[UIScreen mainScreen] bounds].size.width, 100.0f)];
+    [self.view addSubview:toolbar];
+    
+    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activityDidFinish:)]];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewWillAppear:animated];
+    
+    if (self.webServerActivity && [self.webServerActivity isRunning] && [self.webServerActivity serverURL] && [[UIApplication sharedApplication] canOpenURL:[self.webServerActivity serverURL]])
+    {
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, [[UIScreen mainScreen] bounds].size.height - 100.0f, [[UIScreen mainScreen] bounds].size.width, 100.0f)];
+        [button addTarget:self action:@selector(goToSafari:) forControlEvents:UIControlEventTouchUpInside];
+        [button setTitle:[[self.webServerActivity serverURL] absoluteString] forState:UIControlStateNormal];
+        [button setTitleColor:[self.view tintColor] forState:UIControlStateNormal];
+        [self.view addSubview:button];
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)viewDidAppear:(BOOL)animated
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [super viewDidAppear:animated];
+    
+    [UIView animateWithDuration:0.3f animations:^{
+        [self.view setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.3f]];
+    }];
 }
-*/
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
+- (IBAction)goToSafari:(id)sender
+{
+    if (self.webServerActivity && [self.webServerActivity isRunning] && [self.webServerActivity serverURL] && [[UIApplication sharedApplication] canOpenURL:[self.webServerActivity serverURL]] && [self.webServerActivity port])
+    {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:%@", [self.webServerActivity port]]]];
+    }
+}
+
+- (IBAction)activityDidFinish:(id)sender
+{
+    if (self.webServerActivity)
+    {
+        [self.view setBackgroundColor:[UIColor clearColor]];
+        [self.webServerActivity activityDidFinish:YES];
+    }
+}
 
 @end

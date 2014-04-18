@@ -13,26 +13,28 @@
 		D53CE7B11901811D000B96C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D53CE7AF1901811D000B96C4 /* InfoPlist.strings */; };
 		D53CE7B31901811D000B96C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7B21901811D000B96C4 /* main.m */; };
 		D53CE7B71901811D000B96C4 /* ARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7B61901811D000B96C4 /* ARAppDelegate.m */; };
-		D53CE7BA1901811D000B96C4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53CE7B81901811D000B96C4 /* Main_iPhone.storyboard */; };
-		D53CE7BD1901811D000B96C4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53CE7BB1901811D000B96C4 /* Main_iPad.storyboard */; };
 		D53CE7C01901811D000B96C4 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7BF1901811D000B96C4 /* ARViewController.m */; };
 		D53CE7C21901811D000B96C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53CE7C11901811D000B96C4 /* Images.xcassets */; };
-		D53CE7C91901811D000B96C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53CE7C81901811D000B96C4 /* XCTest.framework */; };
-		D53CE7CA1901811D000B96C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53CE7A61901811D000B96C4 /* Foundation.framework */; };
-		D53CE7CB1901811D000B96C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53CE7AA1901811D000B96C4 /* UIKit.framework */; };
-		D53CE7D31901811D000B96C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D53CE7D11901811D000B96C4 /* InfoPlist.strings */; };
-		D53CE7D51901811D000B96C4 /* ARWebServerActivityExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7D41901811D000B96C4 /* ARWebServerActivityExampleTests.m */; };
+		D53CE7E219018214000B96C4 /* ARWebServerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7E119018214000B96C4 /* ARWebServerActivity.m */; };
+		D53CEB351901829B000B96C4 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7EC19018297000B96C4 /* GCDWebServer.m */; };
+		D53CEB361901829B000B96C4 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7EE19018297000B96C4 /* GCDWebServerConnection.m */; };
+		D53CEB371901829B000B96C4 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7F019018297000B96C4 /* GCDWebServerFunctions.m */; };
+		D53CEB381901829B000B96C4 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7F419018297000B96C4 /* GCDWebServerRequest.m */; };
+		D53CEB391901829B000B96C4 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7F619018297000B96C4 /* GCDWebServerResponse.m */; };
+		D53CEB3A1901829B000B96C4 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7F919018297000B96C4 /* GCDWebServerDataRequest.m */; };
+		D53CEB3B1901829B000B96C4 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7FB19018297000B96C4 /* GCDWebServerFileRequest.m */; };
+		D53CEB3C1901829B000B96C4 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7FD19018297000B96C4 /* GCDWebServerMultiPartFormRequest.m */; };
+		D53CEB3D1901829B000B96C4 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE7FF19018297000B96C4 /* GCDWebServerURLEncodedFormRequest.m */; };
+		D53CEB3E1901829B000B96C4 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE80219018297000B96C4 /* GCDWebServerDataResponse.m */; };
+		D53CEB3F1901829B000B96C4 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE80419018297000B96C4 /* GCDWebServerErrorResponse.m */; };
+		D53CEB401901829B000B96C4 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE80619018297000B96C4 /* GCDWebServerFileResponse.m */; };
+		D53CEB411901829B000B96C4 /* GCDWebServerStreamingResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE80819018297000B96C4 /* GCDWebServerStreamingResponse.m */; };
+		D53CEB431901829B000B96C4 /* GCDWebUploader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D53CE80E19018297000B96C4 /* GCDWebUploader.bundle */; };
+		D53CEB441901829B000B96C4 /* GCDWebUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE81019018297000B96C4 /* GCDWebUploader.m */; };
+		D53CEE651901840B000B96C4 /* ARWebServerActivity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53CEE641901840B000B96C4 /* ARWebServerActivity@2x.png */; };
+		D53CEE6C19018C6F000B96C4 /* ARWebServerActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CEE6B19018C6F000B96C4 /* ARWebServerActivityViewController.m */; };
+		D53CEE6E19018FBA000B96C4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D53CEE6D19018FBA000B96C4 /* libz.dylib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D53CE7CC1901811D000B96C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D53CE79B1901811D000B96C4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D53CE7A21901811D000B96C4;
-			remoteInfo = ARWebServerActivityExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D53CE7A31901811D000B96C4 /* ARWebServerActivityExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARWebServerActivityExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,16 +47,46 @@
 		D53CE7B41901811D000B96C4 /* ARWebServerActivityExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARWebServerActivityExample-Prefix.pch"; sourceTree = "<group>"; };
 		D53CE7B51901811D000B96C4 /* ARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAppDelegate.h; sourceTree = "<group>"; };
 		D53CE7B61901811D000B96C4 /* ARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARAppDelegate.m; sourceTree = "<group>"; };
-		D53CE7B91901811D000B96C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		D53CE7BC1901811D000B96C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		D53CE7BE1901811D000B96C4 /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
 		D53CE7BF1901811D000B96C4 /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
 		D53CE7C11901811D000B96C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D53CE7C71901811D000B96C4 /* ARWebServerActivityExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARWebServerActivityExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D53CE7C81901811D000B96C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D53CE7D01901811D000B96C4 /* ARWebServerActivityExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARWebServerActivityExampleTests-Info.plist"; sourceTree = "<group>"; };
-		D53CE7D21901811D000B96C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D53CE7D41901811D000B96C4 /* ARWebServerActivityExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARWebServerActivityExampleTests.m; sourceTree = "<group>"; };
+		D53CE7E019018214000B96C4 /* ARWebServerActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARWebServerActivity.h; sourceTree = "<group>"; };
+		D53CE7E119018214000B96C4 /* ARWebServerActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARWebServerActivity.m; sourceTree = "<group>"; };
+		D53CE7EB19018297000B96C4 /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		D53CE7EC19018297000B96C4 /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		D53CE7ED19018297000B96C4 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		D53CE7EE19018297000B96C4 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		D53CE7EF19018297000B96C4 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		D53CE7F019018297000B96C4 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		D53CE7F119018297000B96C4 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		D53CE7F219018297000B96C4 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		D53CE7F319018297000B96C4 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		D53CE7F419018297000B96C4 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		D53CE7F519018297000B96C4 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		D53CE7F619018297000B96C4 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		D53CE7F819018297000B96C4 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		D53CE7F919018297000B96C4 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		D53CE7FA19018297000B96C4 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		D53CE7FB19018297000B96C4 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		D53CE7FC19018297000B96C4 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		D53CE7FD19018297000B96C4 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		D53CE7FE19018297000B96C4 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		D53CE7FF19018297000B96C4 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		D53CE80119018297000B96C4 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		D53CE80219018297000B96C4 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		D53CE80319018297000B96C4 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		D53CE80419018297000B96C4 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		D53CE80519018297000B96C4 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		D53CE80619018297000B96C4 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		D53CE80719018297000B96C4 /* GCDWebServerStreamingResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamingResponse.h; sourceTree = "<group>"; };
+		D53CE80819018297000B96C4 /* GCDWebServerStreamingResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamingResponse.m; sourceTree = "<group>"; };
+		D53CE80E19018297000B96C4 /* GCDWebUploader.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GCDWebUploader.bundle; sourceTree = "<group>"; };
+		D53CE80F19018297000B96C4 /* GCDWebUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebUploader.h; sourceTree = "<group>"; };
+		D53CE81019018297000B96C4 /* GCDWebUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebUploader.m; sourceTree = "<group>"; };
+		D53CEE641901840B000B96C4 /* ARWebServerActivity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARWebServerActivity@2x.png"; sourceTree = "<group>"; };
+		D53CEE6A19018C6F000B96C4 /* ARWebServerActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARWebServerActivityViewController.h; sourceTree = "<group>"; };
+		D53CEE6B19018C6F000B96C4 /* ARWebServerActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARWebServerActivityViewController.m; sourceTree = "<group>"; };
+		D53CEE6D19018FBA000B96C4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,19 +94,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53CEE6E19018FBA000B96C4 /* libz.dylib in Frameworks */,
 				D53CE7A91901811D000B96C4 /* CoreGraphics.framework in Frameworks */,
 				D53CE7AB1901811D000B96C4 /* UIKit.framework in Frameworks */,
 				D53CE7A71901811D000B96C4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D53CE7C41901811D000B96C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D53CE7C91901811D000B96C4 /* XCTest.framework in Frameworks */,
-				D53CE7CB1901811D000B96C4 /* UIKit.framework in Frameworks */,
-				D53CE7CA1901811D000B96C4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,8 +107,9 @@
 		D53CE79A1901811D000B96C4 = {
 			isa = PBXGroup;
 			children = (
+				D53CE7DF190181F3000B96C4 /* Submodules */,
+				D53CE7DE190181ED000B96C4 /* ARWebServerActivity */,
 				D53CE7AC1901811D000B96C4 /* ARWebServerActivityExample */,
-				D53CE7CE1901811D000B96C4 /* ARWebServerActivityExampleTests */,
 				D53CE7A51901811D000B96C4 /* Frameworks */,
 				D53CE7A41901811D000B96C4 /* Products */,
 			);
@@ -95,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				D53CE7A31901811D000B96C4 /* ARWebServerActivityExample.app */,
-				D53CE7C71901811D000B96C4 /* ARWebServerActivityExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,10 +126,10 @@
 		D53CE7A51901811D000B96C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D53CEE6D19018FBA000B96C4 /* libz.dylib */,
 				D53CE7A61901811D000B96C4 /* Foundation.framework */,
 				D53CE7A81901811D000B96C4 /* CoreGraphics.framework */,
 				D53CE7AA1901811D000B96C4 /* UIKit.framework */,
-				D53CE7C81901811D000B96C4 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,8 +139,6 @@
 			children = (
 				D53CE7B51901811D000B96C4 /* ARAppDelegate.h */,
 				D53CE7B61901811D000B96C4 /* ARAppDelegate.m */,
-				D53CE7B81901811D000B96C4 /* Main_iPhone.storyboard */,
-				D53CE7BB1901811D000B96C4 /* Main_iPad.storyboard */,
 				D53CE7BE1901811D000B96C4 /* ARViewController.h */,
 				D53CE7BF1901811D000B96C4 /* ARViewController.m */,
 				D53CE7C11901811D000B96C4 /* Images.xcassets */,
@@ -137,22 +158,102 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D53CE7CE1901811D000B96C4 /* ARWebServerActivityExampleTests */ = {
+		D53CE7DE190181ED000B96C4 /* ARWebServerActivity */ = {
 			isa = PBXGroup;
 			children = (
-				D53CE7D41901811D000B96C4 /* ARWebServerActivityExampleTests.m */,
-				D53CE7CF1901811D000B96C4 /* Supporting Files */,
+				D53CEE641901840B000B96C4 /* ARWebServerActivity@2x.png */,
+				D53CE7E019018214000B96C4 /* ARWebServerActivity.h */,
+				D53CE7E119018214000B96C4 /* ARWebServerActivity.m */,
+				D53CEE6A19018C6F000B96C4 /* ARWebServerActivityViewController.h */,
+				D53CEE6B19018C6F000B96C4 /* ARWebServerActivityViewController.m */,
 			);
-			path = ARWebServerActivityExampleTests;
+			path = ARWebServerActivity;
 			sourceTree = "<group>";
 		};
-		D53CE7CF1901811D000B96C4 /* Supporting Files */ = {
+		D53CE7DF190181F3000B96C4 /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
-				D53CE7D01901811D000B96C4 /* ARWebServerActivityExampleTests-Info.plist */,
-				D53CE7D11901811D000B96C4 /* InfoPlist.strings */,
+				D53CE7E319018297000B96C4 /* GCDWebServer */,
 			);
-			name = "Supporting Files";
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		D53CE7E319018297000B96C4 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				D53CE7E919018297000B96C4 /* GCDWebServer */,
+				D53CE80D19018297000B96C4 /* GCDWebUploader */,
+			);
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		D53CE7E919018297000B96C4 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				D53CE7EA19018297000B96C4 /* Core */,
+				D53CE7F719018297000B96C4 /* Requests */,
+				D53CE80019018297000B96C4 /* Responses */,
+			);
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		D53CE7EA19018297000B96C4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D53CE7EB19018297000B96C4 /* GCDWebServer.h */,
+				D53CE7EC19018297000B96C4 /* GCDWebServer.m */,
+				D53CE7ED19018297000B96C4 /* GCDWebServerConnection.h */,
+				D53CE7EE19018297000B96C4 /* GCDWebServerConnection.m */,
+				D53CE7EF19018297000B96C4 /* GCDWebServerFunctions.h */,
+				D53CE7F019018297000B96C4 /* GCDWebServerFunctions.m */,
+				D53CE7F119018297000B96C4 /* GCDWebServerHTTPStatusCodes.h */,
+				D53CE7F219018297000B96C4 /* GCDWebServerPrivate.h */,
+				D53CE7F319018297000B96C4 /* GCDWebServerRequest.h */,
+				D53CE7F419018297000B96C4 /* GCDWebServerRequest.m */,
+				D53CE7F519018297000B96C4 /* GCDWebServerResponse.h */,
+				D53CE7F619018297000B96C4 /* GCDWebServerResponse.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D53CE7F719018297000B96C4 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D53CE7F819018297000B96C4 /* GCDWebServerDataRequest.h */,
+				D53CE7F919018297000B96C4 /* GCDWebServerDataRequest.m */,
+				D53CE7FA19018297000B96C4 /* GCDWebServerFileRequest.h */,
+				D53CE7FB19018297000B96C4 /* GCDWebServerFileRequest.m */,
+				D53CE7FC19018297000B96C4 /* GCDWebServerMultiPartFormRequest.h */,
+				D53CE7FD19018297000B96C4 /* GCDWebServerMultiPartFormRequest.m */,
+				D53CE7FE19018297000B96C4 /* GCDWebServerURLEncodedFormRequest.h */,
+				D53CE7FF19018297000B96C4 /* GCDWebServerURLEncodedFormRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		D53CE80019018297000B96C4 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				D53CE80119018297000B96C4 /* GCDWebServerDataResponse.h */,
+				D53CE80219018297000B96C4 /* GCDWebServerDataResponse.m */,
+				D53CE80319018297000B96C4 /* GCDWebServerErrorResponse.h */,
+				D53CE80419018297000B96C4 /* GCDWebServerErrorResponse.m */,
+				D53CE80519018297000B96C4 /* GCDWebServerFileResponse.h */,
+				D53CE80619018297000B96C4 /* GCDWebServerFileResponse.m */,
+				D53CE80719018297000B96C4 /* GCDWebServerStreamingResponse.h */,
+				D53CE80819018297000B96C4 /* GCDWebServerStreamingResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		D53CE80D19018297000B96C4 /* GCDWebUploader */ = {
+			isa = PBXGroup;
+			children = (
+				D53CE80E19018297000B96C4 /* GCDWebUploader.bundle */,
+				D53CE80F19018297000B96C4 /* GCDWebUploader.h */,
+				D53CE81019018297000B96C4 /* GCDWebUploader.m */,
+			);
+			path = GCDWebUploader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,24 +276,6 @@
 			productReference = D53CE7A31901811D000B96C4 /* ARWebServerActivityExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D53CE7C61901811D000B96C4 /* ARWebServerActivityExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D53CE7DB1901811D000B96C4 /* Build configuration list for PBXNativeTarget "ARWebServerActivityExampleTests" */;
-			buildPhases = (
-				D53CE7C31901811D000B96C4 /* Sources */,
-				D53CE7C41901811D000B96C4 /* Frameworks */,
-				D53CE7C51901811D000B96C4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D53CE7CD1901811D000B96C4 /* PBXTargetDependency */,
-			);
-			name = ARWebServerActivityExampleTests;
-			productName = ARWebServerActivityExampleTests;
-			productReference = D53CE7C71901811D000B96C4 /* ARWebServerActivityExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,11 +285,6 @@
 				CLASSPREFIX = AR;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = alexruperez;
-				TargetAttributes = {
-					D53CE7C61901811D000B96C4 = {
-						TestTargetID = D53CE7A21901811D000B96C4;
-					};
-				};
 			};
 			buildConfigurationList = D53CE79E1901811D000B96C4 /* Build configuration list for PBXProject "ARWebServerActivityExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -222,7 +300,6 @@
 			projectRoot = "";
 			targets = (
 				D53CE7A21901811D000B96C4 /* ARWebServerActivityExample */,
-				D53CE7C61901811D000B96C4 /* ARWebServerActivityExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,18 +309,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53CE7BD1901811D000B96C4 /* Main_iPad.storyboard in Resources */,
+				D53CEE651901840B000B96C4 /* ARWebServerActivity@2x.png in Resources */,
 				D53CE7C21901811D000B96C4 /* Images.xcassets in Resources */,
-				D53CE7BA1901811D000B96C4 /* Main_iPhone.storyboard in Resources */,
+				D53CEB431901829B000B96C4 /* GCDWebUploader.bundle in Resources */,
 				D53CE7B11901811D000B96C4 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D53CE7C51901811D000B96C4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D53CE7D31901811D000B96C4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,59 +323,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53CEB381901829B000B96C4 /* GCDWebServerRequest.m in Sources */,
+				D53CEB3F1901829B000B96C4 /* GCDWebServerErrorResponse.m in Sources */,
+				D53CEB3C1901829B000B96C4 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				D53CEB361901829B000B96C4 /* GCDWebServerConnection.m in Sources */,
 				D53CE7B31901811D000B96C4 /* main.m in Sources */,
+				D53CEB351901829B000B96C4 /* GCDWebServer.m in Sources */,
+				D53CEB441901829B000B96C4 /* GCDWebUploader.m in Sources */,
+				D53CEB3A1901829B000B96C4 /* GCDWebServerDataRequest.m in Sources */,
+				D53CEB411901829B000B96C4 /* GCDWebServerStreamingResponse.m in Sources */,
+				D53CEB3D1901829B000B96C4 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D53CE7E219018214000B96C4 /* ARWebServerActivity.m in Sources */,
 				D53CE7C01901811D000B96C4 /* ARViewController.m in Sources */,
+				D53CEB3B1901829B000B96C4 /* GCDWebServerFileRequest.m in Sources */,
+				D53CEB391901829B000B96C4 /* GCDWebServerResponse.m in Sources */,
+				D53CEB401901829B000B96C4 /* GCDWebServerFileResponse.m in Sources */,
+				D53CEB3E1901829B000B96C4 /* GCDWebServerDataResponse.m in Sources */,
+				D53CEB371901829B000B96C4 /* GCDWebServerFunctions.m in Sources */,
+				D53CEE6C19018C6F000B96C4 /* ARWebServerActivityViewController.m in Sources */,
 				D53CE7B71901811D000B96C4 /* ARAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D53CE7C31901811D000B96C4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D53CE7D51901811D000B96C4 /* ARWebServerActivityExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D53CE7CD1901811D000B96C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D53CE7A21901811D000B96C4 /* ARWebServerActivityExample */;
-			targetProxy = D53CE7CC1901811D000B96C4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D53CE7AF1901811D000B96C4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D53CE7B01901811D000B96C4 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D53CE7B81901811D000B96C4 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D53CE7B91901811D000B96C4 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		D53CE7BB1901811D000B96C4 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D53CE7BC1901811D000B96C4 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		D53CE7D11901811D000B96C4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D53CE7D21901811D000B96C4 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -346,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -412,46 +457,6 @@
 			};
 			name = Release;
 		};
-		D53CE7DC1901811D000B96C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARWebServerActivityExample.app/ARWebServerActivityExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ARWebServerActivityExample/ARWebServerActivityExample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ARWebServerActivityExampleTests/ARWebServerActivityExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		D53CE7DD1901811D000B96C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ARWebServerActivityExample.app/ARWebServerActivityExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ARWebServerActivityExample/ARWebServerActivityExample-Prefix.pch";
-				INFOPLIST_FILE = "ARWebServerActivityExampleTests/ARWebServerActivityExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -471,14 +476,7 @@
 				D53CE7DA1901811D000B96C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		D53CE7DB1901811D000B96C4 /* Build configuration list for PBXNativeTarget "ARWebServerActivityExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D53CE7DC1901811D000B96C4 /* Debug */,
-				D53CE7DD1901811D000B96C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
