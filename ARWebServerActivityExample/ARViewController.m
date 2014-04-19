@@ -19,8 +19,6 @@
 {
     [super viewDidLoad];
     
-    [self.view setBackgroundColor:[UIColor redColor]];
-    
 	UIButton *showActivitiesButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	[showActivitiesButton setTitle:NSLocalizedString(@"Show Activities", @"Show Activities button") forState:UIControlStateNormal];
 	[showActivitiesButton addTarget:self action:@selector(showActivities:) forControlEvents:UIControlEventTouchUpInside];
@@ -33,8 +31,7 @@
 {
 	ARWebServerActivity *webServerActivity = [[ARWebServerActivity alloc] init];
     
-	UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[@"Hola", [UIImage imageNamed:NSStringFromClass([ARWebServerActivity class])], [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[NSStringFromClass([ARWebServerActivity class]) stringByAppendingString:@"@2x"] ofType:@"png"]], [NSURL URLWithString:@"http://humanstxt.org/humans.txt"], [@"data" dataUsingEncoding:NSUTF8StringEncoding], @{@"key": @[@"value1", @"vale2"]}, @[@"value1", @"vale2"]] applicationActivities:@[webServerActivity]];
-    
+	UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[@"Hello World!", [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", webServerActivity.activityType, webServerActivity.activityType]], [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[[NSString stringWithFormat:@"%@.bundle/%@", webServerActivity.activityType, webServerActivity.activityType] stringByAppendingString:@"@2x~ipad"] ofType:@"png"]], [NSURL URLWithString:@"http://humanstxt.org/humans.txt"], [@"data" dataUsingEncoding:NSUTF8StringEncoding], @{@"key": @[@"value1", @"value2"]}, @[@"value1", @"value2"]] applicationActivities:@[webServerActivity]];
 	[self presentViewController:activityViewController animated:YES completion:nil];
 }
 

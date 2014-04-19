@@ -31,9 +31,9 @@
 		D53CEB411901829B000B96C4 /* GCDWebServerStreamingResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE80819018297000B96C4 /* GCDWebServerStreamingResponse.m */; };
 		D53CEB431901829B000B96C4 /* GCDWebUploader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D53CE80E19018297000B96C4 /* GCDWebUploader.bundle */; };
 		D53CEB441901829B000B96C4 /* GCDWebUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CE81019018297000B96C4 /* GCDWebUploader.m */; };
-		D53CEE651901840B000B96C4 /* ARWebServerActivity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53CEE641901840B000B96C4 /* ARWebServerActivity@2x.png */; };
 		D53CEE6C19018C6F000B96C4 /* ARWebServerActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53CEE6B19018C6F000B96C4 /* ARWebServerActivityViewController.m */; };
 		D53CEE6E19018FBA000B96C4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D53CEE6D19018FBA000B96C4 /* libz.dylib */; };
+		D5F2C0B9190283CF006078A0 /* ARWebServerActivity.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D5F2C0B8190283CF006078A0 /* ARWebServerActivity.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,10 +83,10 @@
 		D53CE80E19018297000B96C4 /* GCDWebUploader.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GCDWebUploader.bundle; sourceTree = "<group>"; };
 		D53CE80F19018297000B96C4 /* GCDWebUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebUploader.h; sourceTree = "<group>"; };
 		D53CE81019018297000B96C4 /* GCDWebUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebUploader.m; sourceTree = "<group>"; };
-		D53CEE641901840B000B96C4 /* ARWebServerActivity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARWebServerActivity@2x.png"; sourceTree = "<group>"; };
 		D53CEE6A19018C6F000B96C4 /* ARWebServerActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARWebServerActivityViewController.h; sourceTree = "<group>"; };
 		D53CEE6B19018C6F000B96C4 /* ARWebServerActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARWebServerActivityViewController.m; sourceTree = "<group>"; };
 		D53CEE6D19018FBA000B96C4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D5F2C0B8190283CF006078A0 /* ARWebServerActivity.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ARWebServerActivity.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +161,7 @@
 		D53CE7DE190181ED000B96C4 /* ARWebServerActivity */ = {
 			isa = PBXGroup;
 			children = (
-				D53CEE641901840B000B96C4 /* ARWebServerActivity@2x.png */,
+				D5F2C0B8190283CF006078A0 /* ARWebServerActivity.bundle */,
 				D53CE7E019018214000B96C4 /* ARWebServerActivity.h */,
 				D53CE7E119018214000B96C4 /* ARWebServerActivity.m */,
 				D53CEE6A19018C6F000B96C4 /* ARWebServerActivityViewController.h */,
@@ -309,7 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53CEE651901840B000B96C4 /* ARWebServerActivity@2x.png in Resources */,
+				D5F2C0B9190283CF006078A0 /* ARWebServerActivity.bundle in Resources */,
 				D53CE7C21901811D000B96C4 /* Images.xcassets in Resources */,
 				D53CEB431901829B000B96C4 /* GCDWebUploader.bundle in Resources */,
 				D53CE7B11901811D000B96C4 /* InfoPlist.strings in Resources */,

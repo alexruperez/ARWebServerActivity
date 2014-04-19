@@ -36,7 +36,7 @@
         
         self.bonjourName = bonjourName ? bonjourName : nil;
         
-        self.path = path ? path : [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:NSStringFromClass([self class])];
+        self.path = path ? path : [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:[self activityType]];
 
         [self setActivityViewController:activityViewController ? activityViewController : [[ARWebServerActivityViewController alloc] init]];
     }
@@ -105,12 +105,20 @@
 
 - (UIImage *)activityImage
 {
-	return [UIImage imageNamed:NSStringFromClass([self class])];
+    NSString *activityType = [self activityType];
+	NSString *filename = [NSString stringWithFormat:@"%@.bundle/%@", activityType, activityType];
+    
+	if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] == NSOrderedAscending)
+	{
+		filename = [filename stringByAppendingString:@"-iOS6"];
+	}
+    
+	return [UIImage imageNamed:filename];
 }
 
 - (NSString *)activityTitle
 {
-	return @"Share by WebServer";
+    return NSLocalizedStringFromTableInBundle(@"Share via web server", [self activityType], [self bundle], nil);
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems
@@ -205,6 +213,17 @@
     }
     
     [super activityDidFinish:completed];
+}
+
+- (NSBundle *)bundle
+{
+	NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:[self activityType] withExtension:@"bundle"];
+	if (bundleURL)
+    {
+		return [NSBundle bundleWithURL:bundleURL];
+	}
+    
+	return [NSBundle mainBundle];
 }
 
 @end

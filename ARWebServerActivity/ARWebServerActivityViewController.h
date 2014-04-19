@@ -13,4 +13,7 @@
 
 @property (strong, nonatomic) ARWebServerActivity *webServerActivity;
 
+- (IBAction)goToSafari:(id)sender;
+- (IBAction)activityDidFinish:(id)sender;
+
 @end
