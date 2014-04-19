@@ -14,7 +14,9 @@ You can share:
 
 ## Clone the example proyect
 
-To pull the [swisspol/GCDWebServer](https://github.com/swisspol/GCDWebServer) submodule run `git clone --recursive git@github.com:alexruperez/ARWebServerActivity.git`
+To pull the [swisspol/GCDWebServer](https://github.com/swisspol/GCDWebServer) submodule run:
+
+`git clone --recursive git@github.com:alexruperez/ARWebServerActivity.git`
 
 ## Requirements
 
@@ -38,3 +40,21 @@ UIActivityViewController *activityViewController = [[UIActivityViewController al
 ```
 
 Note that you can include the activity in any UIActivityViewController and it will only be shown to the user if there is a valid object in the activity items.
+
+## Customization
+
+To customize this control you can use:
+
+```objectivec
+- (instancetype)initWithPort:(NSNumber *)port bonjourName:(NSString *)bonjourName path:(NSString *)path activityViewController:(UIViewController *)activityViewController;
+```
+
+- `port`: [swisspol/GCDWebServer](https://github.com/swisspol/GCDWebServer) port.
+- `bonjourName`: If you want your server be visible at Bonjour.
+- `path`: If you want to change the local files path shared by your server. Note that will be removed after sharing.
+- `activityViewController`: If you want to change the default control UI, you can subclass `ARWebServerActivityViewController` and not call `[super viewWillAppear:animated];`, make your own UIViewController or improve my `ARWebServerActivityViewController` and make a pull request.
+
+## TO-DO (Help needed!)
+
+- Add (programmatically) Auto Layout constraints to `ARWebServerActivityViewController` and example Xcode project for screen rotation.
+- Improve `ARWebServerActivityViewController` UI.
