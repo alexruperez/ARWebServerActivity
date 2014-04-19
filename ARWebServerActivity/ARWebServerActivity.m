@@ -32,7 +32,7 @@
     {
         self.fileManager = [NSFileManager defaultManager];
         
-        self.port = port ? port : @8080;
+        self.port = port ? port : @80;
         
         self.bonjourName = bonjourName ? bonjourName : nil;
         
@@ -184,12 +184,12 @@
 
 - (UIViewController *)activityViewController
 {
-    if ([_activityViewController isKindOfClass:[ARWebServerActivityViewController class]])
+    if ([_activityViewController respondsToSelector:@selector(setWebServerActivity:)])
     {
-        ARWebServerActivityViewController *activityViewController = (ARWebServerActivityViewController *)_activityViewController;
-        [activityViewController setWebServerActivity:self];
-        [self start];
+        [(ARWebServerActivityViewController *)_activityViewController setWebServerActivity:self];
     }
+    
+    [self start];
     
     return _activityViewController;
 }

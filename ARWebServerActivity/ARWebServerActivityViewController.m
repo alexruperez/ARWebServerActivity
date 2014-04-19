@@ -33,14 +33,25 @@
 {
     [super viewWillAppear:animated];
     
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, [[UIScreen mainScreen] bounds].size.height - 100.0f, [[UIScreen mainScreen] bounds].size.width, 100.0f)];
+    [button addTarget:self action:@selector(goToSafari:) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitleColor:[self.view tintColor] forState:UIControlStateNormal];
     if (self.webServerActivity && [self.webServerActivity isRunning] && [self.webServerActivity serverURL] && [[UIApplication sharedApplication] canOpenURL:[self.webServerActivity serverURL]])
     {
-        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, [[UIScreen mainScreen] bounds].size.height - 100.0f, [[UIScreen mainScreen] bounds].size.width, 100.0f)];
-        [button addTarget:self action:@selector(goToSafari:) forControlEvents:UIControlEventTouchUpInside];
         [button setTitle:[[self.webServerActivity serverURL] absoluteString] forState:UIControlStateNormal];
-        [button setTitleColor:[self.view tintColor] forState:UIControlStateNormal];
-        [self.view addSubview:button];
     }
+    else if (self.webServerActivity && [self.webServerActivity isRunning] && [self.webServerActivity port])
+    {
+        if (![[self.webServerActivity port] isEqualToNumber:@80])
+        {
+            [button setTitle:[NSString stringWithFormat:@"http://localhost:%@/", [self.webServerActivity port]] forState:UIControlStateNormal];
+        }
+        else
+        {
+            [button setTitle:@"http://localhost/" forState:UIControlStateNormal];
+        }
+    }
+    [self.view addSubview:button];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -59,9 +70,16 @@
 
 - (IBAction)goToSafari:(id)sender
 {
-    if (self.webServerActivity && [self.webServerActivity isRunning] && [self.webServerActivity serverURL] && [[UIApplication sharedApplication] canOpenURL:[self.webServerActivity serverURL]] && [self.webServerActivity port])
+    if (self.webServerActivity && [self.webServerActivity isRunning] && [self.webServerActivity port])
     {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:%@", [self.webServerActivity port]]]];
+        if (![[self.webServerActivity port] isEqualToNumber:@80])
+        {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:%@/", [self.webServerActivity port]]]];
+        }
+        else
+        {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://localhost/"]];
+        }
     }
 }
 
