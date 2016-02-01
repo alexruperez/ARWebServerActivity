@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "GCDWebUploader.h"
+#import <GCDWebServer/GCDWebUploader.h>
 
 @interface ARWebServerActivity : UIActivity
 

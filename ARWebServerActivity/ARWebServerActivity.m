@@ -77,7 +77,7 @@
         [options setObject:self.bonjourName forKey:GCDWebServerOption_BonjourName];
     }
     
-    return [self.webUploader startWithOptions:options];
+    return [self.webUploader startWithOptions:options error:nil];
 }
 
 - (void)stop
@@ -113,7 +113,7 @@
 		filename = [filename stringByAppendingString:@"-iOS6"];
 	}
     
-	return [UIImage imageNamed:filename];
+	return [UIImage imageNamed:filename inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil];
 }
 
 - (NSString *)activityTitle

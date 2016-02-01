@@ -1,13 +1,17 @@
-Pod::Spec.new do |spec|
-  spec.name         = 'ARWebServerActivity'
-  spec.version      = '0.0.1'
-  spec.license      = 'MIT'
-  spec.summary      = 'A UIActivity subclass that share files via GCDWebServer with Twitter Bootstrap UI.'
-  spec.homepage     = 'https://github.com/alexruperez/ARWebServerActivity'
-  spec.author       = 'Alex Ruperez'
-  spec.platform     = :ios, '6.0'
-  spec.source       = { :git => 'https://github.com/alexruperez/ARWebServerActivity.git', :tag => 'v0.0.1' }
-  spec.source_files = 'ARWebServerActivity/*.{h,m}'
-  spec.resources    = 'ARWebServerActivity/ARWebServerActivity.bundle'
-  spec.requires_arc = true
+Pod::Spec.new do |s|
+  s.name         = 'ARWebServerActivity'
+  s.version      = '1.0.1'
+  s.license      = 'MIT'
+  s.summary      = 'A UIActivity subclass that share files via GCDWebServer with Twitter Bootstrap UI.'
+  s.homepage     = 'https://github.com/alexruperez/ARWebServerActivity'
+  s.screenshots  = "https://raw.githubusercontent.com/alexruperez/ARWebServerActivity/master/screenshot.png"
+  s.author       = { "Alex Rupérez" => "contact@alexruperez.com" }
+  s.social_media_url   = "http://twitter.com/alexruperez"
+  s.platform     = :ios, '6.0'
+  s.source       = { :git => 'https://github.com/alexruperez/ARWebServerActivity.git', :tag => s.version.to_s }
+  s.source_files = 'ARWebServerActivity/*.{h,m,swift}'
+  s.resources    = 'ARWebServerActivity/ARWebServerActivity.bundle'
+  s.requires_arc = true
+  s.frameworks = "UIKit", "CoreGraphics"
+  s.dependency 'GCDWebServer/WebUploader', '~> 3.3'
 end

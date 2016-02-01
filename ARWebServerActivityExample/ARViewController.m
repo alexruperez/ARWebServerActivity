@@ -7,7 +7,7 @@
 //
 
 #import "ARViewController.h"
-#import "ARWebServerActivity.h"
+#import <ARWebServerActivity/ARWebServerActivity.h>
 
 @interface ARViewController ()
 
@@ -27,11 +27,18 @@
     [self.view addSubview:showActivitiesButton];
 }
 
-- (void)showActivities:(id)sender
+- (void)showActivities:(UIButton *)button
 {
 	ARWebServerActivity *webServerActivity = [[ARWebServerActivity alloc] init];
     
 	UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[@"Hello World!", [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", webServerActivity.activityType, webServerActivity.activityType]], [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:[[NSString stringWithFormat:@"%@.bundle/%@", webServerActivity.activityType, webServerActivity.activityType] stringByAppendingString:@"@2x~ipad"] ofType:@"png"]], [NSURL URLWithString:@"http://humanstxt.org/humans.txt"], [@"data" dataUsingEncoding:NSUTF8StringEncoding], @{@"key": @[@"value1", @"value2"]}, @[@"value1", @"value2"]] applicationActivities:@[webServerActivity]];
+    
+    if ([activityViewController respondsToSelector:NSSelectorFromString(@"popoverPresentationController")])
+    {
+        activityViewController.popoverPresentationController.sourceView = button;
+        activityViewController.popoverPresentationController.sourceRect = button.bounds;
+    }
+    
 	[self presentViewController:activityViewController animated:YES completion:nil];
 }
 
