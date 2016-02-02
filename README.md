@@ -1,5 +1,13 @@
 # ARWebServerActivity
 
+[![Twitter](http://img.shields.io/badge/contact-@alexruperez-blue.svg?style=flat)](http://twitter.com/alexruperez)
+[![Version](https://img.shields.io/cocoapods/v/ARWebServerActivity.svg?style=flat)](http://cocoadocs.org/docsets/ARWebServerActivity)
+[![License](https://img.shields.io/cocoapods/l/ARWebServerActivity.svg?style=flat)](http://cocoadocs.org/docsets/ARWebServerActivity)
+[![Platform](https://img.shields.io/cocoapods/p/ARWebServerActivity.svg?style=flat)](http://cocoadocs.org/docsets/ARWebServerActivity)
+[![Analytics](https://ga-beacon.appspot.com/UA-55329295-1/ARWebServerActivity/readme?pixel)](https://github.com/igrigorik/ga-beacon)
+
+## Overview
+
 `ARWebServerActivity` is a `UIActivity` subclass that provides an "Share via web server" action to a `UIActivityViewController` to share files via [swisspol/GCDWebServer](https://github.com/swisspol/GCDWebServer) with Twitter Bootstrap UI.
 
 You can share:
