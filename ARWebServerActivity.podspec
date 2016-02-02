@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ARWebServerActivity'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.license      = 'MIT'
   s.summary      = 'A UIActivity subclass that share files via GCDWebServer with Twitter Bootstrap UI.'
   s.homepage     = 'https://github.com/alexruperez/ARWebServerActivity'
